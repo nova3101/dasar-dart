@@ -1,8 +1,8 @@
 import 'package:dasar_dart/dasar_dart.dart';
-import 'package:test/test.dart';
+import 'dart:io'  ;
 
-void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
-  });
+void main(List<String> arguments) {
+  String input = stdin.readLineSync();
+    double number = double.tryParse(input);
+  print(number + 10);
 }
